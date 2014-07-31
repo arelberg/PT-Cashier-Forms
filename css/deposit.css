@@ -1,0 +1,577 @@
+/*
+	Name: PT Cashier Deposit CSS
+	Date Created: 07/28/14 10:00AM
+	Author: Are Lorenz Bergonia
+*/
+
+/* Second Tab Second Level */
+
+#secondTabSubContainer .contentTitleContainer {
+	width:auto;
+	height:19px;
+	background:#1e0000;
+	border:1px solid #ff9000;
+	border-top:none;
+}
+#secondTabSubContainer .contentTitleContainer h4 {
+	float:right;
+	font-size:11px;
+	color:#ffffff;
+	margin-right:10px;
+}
+
+.secondTabSecondLevelMenu ul li {
+	float:left;
+	display:block;
+	width:128px;
+	height:29px;
+	border:1px #ff9000 solid; 
+	border-top:none;
+	background:url(../images/secondTabBg1Landing.png);
+}
+
+.secondTabSecondLevelMenu ul li a {
+	display:block;
+	width:128px;
+	height:29px;
+	text-align:center;
+	color:#ffffff;
+	font-size:16px;
+	line-height:30px;
+	background:url(../images/secondTabBg1Landing.png);
+}
+.secondTabSecondLevelMenu ul li a.active {
+	width:128px;
+	height:29px;
+	background:url(../images/secondTabBg1Landing.png) 0px -29px;
+}
+.secondTabSecondLevelMenu ul li a:hover {
+	cursor:pointer;
+	width:128px;
+	height:29px;
+	background:url(../images/secondTabBg1Landing.png) 0px -29px;
+}
+.secondTabSecondLevelMenu li.last {
+	width:128px;
+}
+.secondTabSubContainer {
+	font:12px; /* w3c Standard Checked */
+}
+
+/* Second Tab First Content */
+
+.secondTabContent01 {
+	padding:0px 50px;
+	font-size:12px;
+	color:#fff;
+}
+.secondTabContent01 h3 {
+	font-size: 24px;
+	color:#fff;
+	font-weight:normal;
+}
+.bankDeposit {
+	border-collapse:collapse;
+	border:1px #eab324 solid;
+	color:#ff0000;
+	margin-bottom:10px;
+}
+.bankDeposit td {
+	width:160px;
+	height:60px;
+	background:#3f2202;
+	text-align:center;
+	border:1px #eab324 solid;
+	font-size:22px;
+}
+.bankDeposit span.firstBankTitle {
+	color:#ff9c00;
+	font-size:22px;
+}
+.bankDeposit span.firstBankTitle.firstBankSmall {
+	color:#ff9c00;
+	font-size:14px;
+}
+.secondTabContent01 ol{
+	list-style-type:decimal;
+	margin-left:20px;
+}
+.bankDeposit a#depositBank01 {
+	display:block;
+	width:147px;
+	height:52px;
+	margin:0 auto;
+	background:url(../images/depositBank01.png);
+}
+.bankDeposit a:hover#depositBank01 {
+	cursor:pointer;
+	display:block;
+	width:147px;
+	height:52px;
+	background:url(../images/depositBank01.png) 0px -52px;
+}
+.bankDeposit a#depositBank02 {
+	display:block;
+	width:147px;
+	height:52px;
+	margin:0 auto;
+	background:url(../images/depositBank02.png);
+}
+.bankDeposit a:hover#depositBank02 {
+	cursor:pointer;
+	display:block;
+	width:147px;
+	height:52px;
+	background:url(../images/depositBank02.png) 0px -52px;
+}
+.bankDeposit a#depositBank03 {
+	display:block;
+	width:147px;
+	height:52px;
+	margin:0 auto;
+	background:url(../images/depositBank03.png);
+}
+.bankDeposit a:hover#depositBank03 {
+	cursor:pointer;
+	display:block;
+	width:147px;
+	height:52px;
+	background:url(../images/depositBank03.png) 0px -52px;
+}
+.bankDeposit a#depositBank04 {
+	cursor:pointer;
+	display:block;
+	width:147px;
+	height:52px;
+	margin:0 auto;
+	background:url(../images/depositBank04.png);
+}
+.bankDeposit a:hover#depositBank04 {
+	cursor:pointer;
+	display:block;
+	width:147px;
+	height:52px;
+	background:url(../images/depositBank04.png) 0px -52px;
+}
+
+/* Deposit Forms */
+.secondTabDeposit01 {
+	display:none;
+}
+.secondTabDeposit01Content {
+	width:410px;
+	height:auto;
+	margin:0 auto;
+	font-size:12px;
+	color:#fff;
+}
+.secondTabDepositTitle {
+	width:370px;
+	height:40px;
+	background:#241200;
+	text-align:center;
+	margin:0 auto;
+    border: 1px solid #eab324;
+}
+.secondTabDepositTitle h1 {
+	font-size:18px;
+	color:#ffd676;
+	line-height:40px;
+	font-weight:normal;
+}
+.secondTabDepositBody {
+	width:370px;
+	height:auto;
+	background:#422304;
+	text-align:center;
+	margin:0 auto;
+	padding:10px 0px;
+	margin-bottom:20px;
+	border: 1px solid #eab324;
+	border-top:none;
+}
+.secondTabDepositBody .depositForm {
+	width:285px;
+	margin:0 auto;
+}
+.secondTabDepositBody .depositForm .depositFormField{
+	width:176px;
+	/*height:23px;*/
+	background:#FFF;
+	border:1px solid #ff9000;
+	outline:none;
+}
+.depositForm span.required {
+	color:#df0001;
+}
+.secondTabDeposit01Content h3 {
+	color:#ffd676;
+}
+.secondTabDeposit01Content ol {
+	list-style-type:decimal;
+	margin-left:30px;
+}
+.secondTabDeposit01Content ol li span.firstList{
+	color:#d71716;
+}
+
+.secondTabMainContent {
+	font-size:12px;
+}
+.firstTabMainContent {
+	font-size:12px;
+}
+
+/* Date Picker */
+
+.ui-widget {
+	font-size:12px !important;
+}
+
+input.submitDate {
+	color:#fad900;
+	background:#b40000;
+	border:1px solid #780000;
+	cursor:pointer;
+}
+input.submitDate:hover {
+	color:#fad900;
+	background:#550000;
+	border:1px solid #780000;
+}
+
+input.txtfieldDate {
+	border:1px solid #780000;	
+}
+
+.firstTabContentContainer01, 
+.firstTabContentContainerSub02,
+.firstTabContentContainer02,
+.firstTabContentContainer03,
+.firstTabContentContainer04Sub01,
+.firstTabContentContainer04Sub02,
+.firstTabContentContainer05 {
+	height:336px !important;
+	width:650px;
+	overflow:auto;
+	border-bottom:1px #ff9000 solid;
+}
+.secondTabContentContainer03 {
+	height:368px !important;
+	width:650px;
+	/*overflow:auto;*/
+	border-bottom:1px #ff9000 solid;
+}
+
+#customerCenter01 table td {
+	font-size:12px !important;
+	color:#fff !important;
+}
+
+#customerCenterIframe {
+	display:block;
+	position:relative;
+}
+.iframeContainer {
+	position:relative;
+	width:650px;
+	height:500px;
+}
+#closeNow {
+	width:34px;
+	height:34px;
+	background:url(../images/closeBtn.png) no-repeat;
+	position:absolute;
+	top:-20px;
+	right:-195px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+/* Date Picker */
+
+.ui-widget {
+	font-size:12px !important;
+}
+
+input.submitDate {
+	color:#fad900;
+	background:#b40000;
+	border:1px solid #780000;
+	cursor:pointer;
+}
+input.submitDate:hover {
+	color:#fad900;
+	background:#550000;
+	border:1px solid #780000;
+}
+
+input.txtfieldDate {
+	border:1px solid #780000;	
+}
+
+/* For Footer Pagination */
+.firstTabContentContainer01, 
+.firstTabContentContainerSub02,
+.firstTabContentContainer02,
+.firstTabContentContainer03,
+.firstTabContentContainer04Sub01,
+.firstTabContentContainer04Sub02,
+.firstTabContentContainer05 {
+	height:336px !important;
+	width:650px;
+	overflow:auto;
+	border-bottom:1px #ff9000 solid;
+}
+.secondTabContentContainer03 {
+	height:368px !important;
+	width:650px;
+	/*overflow:auto;*/
+	border-bottom:1px #ff9000 solid;
+}
+
+#customerCenter01 table td {
+	font-size:12px !important;
+	color:#fff !important;
+}
+
+
+.fourthTabSecondLevelMenu ul li a {
+	display:block;
+	width:214px;
+	height:29px;
+	text-align:center;
+	color:#ffffff;
+	font-size:16px;
+	line-height:30px;
+	/*border:1px #ff9000 solid; temporary disable */ 
+	background:#300101;
+}
+
+/* Deposit Page */
+
+input.txtfieldDate {
+	border:1px solid #780000;	
+	width:150px !important;
+}
+
+.submitDeposit { 
+	color:#ffd676;
+	background:#3c0101;
+	border:1px solid #820000;
+	padding:5px 10px;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.submitDeposit:hover {
+	color:#fff;
+	background:#550000;
+	border:1px solid #820000;
+}
+
+.secondFormTable {
+	width:350px;
+	margin:0 auto;
+}
+.secondFormTable td {
+	text-align:left !important;
+	padding:5px;
+}
+
+.secondTabDepositBody .depositForm td{
+	text-align:left;
+	padding:5px;
+}
+.thirdFormTable {
+	width:295px;
+	margin:0 auto;
+	margin-left:20px;
+}
+.thirdFormTable td {
+	text-align:left;
+	padding:4px;
+	min-width:100px;
+}
+
+span.amountDeposit,
+span.accountsDeposit,
+span.emailDeposit {
+	color: #ff9c00;
+	font-weight:bold;
+}
+
+.secondTabDepositBody .depositForm .depositFormField{
+	width:176px;
+	/*height:23px;*/
+	background:#FFF;
+	border:1px solid #ff9000;
+	outline:none;
+}
+
+.firstFormContentTable {
+	padding:10px;
+	width:300px;
+	text-align:left;
+	margin-left:40px;
+}
+
+.thirdFormField {
+	width:130px;
+	/*height:23px;*/
+	background:#FFF;
+	border:1px solid #ff9000;
+	outline:none;
+}
+
+.copyText {
+	color: #C10000;
+	font-weight: bold;
+}
+
+input[type="submit"]:disabled
+{
+	background:#b9b9b9 !important;
+	color:#5a5a5a !important;
+}
+
+.thirdFormTable td {
+	text-align:left;
+	padding:4px;
+	min-width:80px !important;
+}
+
+#iframeContainer {
+	position:relative;
+	width:674px !important; /* From 650px to 674px*/
+	height:500px;
+}
+
+.secondTabDeposit01 select, 
+.secondTabDeposit01 textarea, 
+.secondTabDeposit01 input[type="text"], 
+.secondTabDeposit01 input[type="password"], 
+.secondTabDeposit01 input[type="datetime"], 
+.secondTabDeposit01 input[type="datetime-local"], 
+.secondTabDeposit01 input[type="date"], 
+.secondTabDeposit01 input[type="month"], 
+.secondTabDeposit01 input[type="time"], 
+.secondTabDeposit01 input[type="week"], 
+.secondTabDeposit01 input[type="number"], 
+.secondTabDeposit01 input[type="email"], 
+.secondTabDeposit01 input[type="url"], 
+.secondTabDeposit01 input[type="search"], 
+.secondTabDeposit01 input[type="tel"], 
+.secondTabDeposit01 input[type="color"], 
+.secondTabDeposit01 .uneditable-input {
+   	display: inline-block;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 14px;
+    line-height: 20px !important; 
+    color: #555;
+    vertical-align: middle !important;
+    border-radius: 0px !important;
+	border:1px solid #FF9C00 !important;
+}
+
+/* Deposit Status CSS*/
+
+.thirdFormClass {
+	margin-top:10px;
+}
+
+.thirdFormReviewBtn {
+	color:#090;
+	cursor:pointer;
+	border:none;
+}
+.thirdFormCancelBtn {
+	color:#F00;
+	cursor:pointer;
+	border:none;
+}
+.thirdFormRefreshBtn{
+    color:#090;
+	cursor:pointer;
+	border:none;
+}
+.thirdFormDeleteBtn{
+    color:#F00;
+	cursor:pointer;
+	border:none;
+}
+.inputDatePicker {
+	width:170px !important;
+	font-size:10px;
+	height:20px !important;
+}
+
+.thirdFormField {
+	width:170px !important;
+}
+
+.table-condensed th, .table-condensed td {
+	padding:0px !important;
+}
+
+.datepicker td, .datepicker th {
+	font-size:12px !important;
+}
+.datepicker td.month , .datepicker th.month {
+	font-size:12px !important;
+}
+
+.datepicker td span {
+	width:40px !important;
+	height:40px !important;
+}
+
+/* Hour minute seconds */
+
+.bootstrap-datetimepicker-widget .timepicker-hour, 
+.bootstrap-datetimepicker-widget .timepicker-minute, 
+.bootstrap-datetimepicker-widget .timepicker-second
+ {
+	width: 100%;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333 !important;
+	padding-left:10px;
+	cursor:pointer; /* cursor pointer for the time-picker */
+}
+
+.bootstrap-datetimepicker-widget .separator {
+	color: #333333 !important;
+}
+
+.bootstrap-datetimepicker-widget .minute,
+.bootstrap-datetimepicker-widget .hour, 
+.bootstrap-datetimepicker-widget .second {
+	font-size:12px;
+	color: #333333 !important;
+	padding: 0px 17px !important; /* Padding of the minute, hour, and second */
+}
+
+.bootstrap-datetimepicker-widget .minute:hover,
+.bootstrap-datetimepicker-widget .hour:hover, 
+.bootstrap-datetimepicker-widget .second:hover {
+	font-size:12px;
+	cursor:pointer;
+	padding: 0px 17px !important;
+	background:#eee;
+}
+
+.timepicker-picker .table-condensed tr td {
+	padding: 4px 7px !important;
+}
+
+.accordion-toggle {
+	text-align:center !important;
+}
+
+/* Addition CSS */
+
+.PTBody {
+	overflow: auto !important;
+}

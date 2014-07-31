@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PT Cashier | Deposit Manual </title>
+	<script type="text/javascript" language="javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" language="javascript" src="js/general.js"></script>
+    <script type="text/javascript" language="javascript" src="js/decimalinput.js"></script>
+    <script type="text/javascript" language="javascript" src="js/bankDeposit.js"></script>
+    <script type="text/javascript" language="javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/deposit.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-combined.min.css" />
+</head>
+<body>
+    <div class="PTBoxContainer">
+    	<div class="PTBoxShadow"></div><!-- End of boxShadow -->
+        <div class="PTHeader">
+            <div class="PTTitleContainer">
+                <img src="images/aiwinLogo.png" width="133" height="41" alt="" />
+                <h1>爱赢PT老虎机财务中心</h1>
+                <a class="exitBtn" onclick="window.location.href='logInForm.html'"></a>
+            </div><!-- End of PTHeader -->
+            <div class="PTBalanceContainer">
+                <div class="PTBalance">
+                	<div class="PTAiwinBalance">
+                        <span class="balanceLabel">爱赢网余额 :</span> 
+                        <span class="balanceValue"> XXXXXX </span>
+                   	</div><!-- End of PTAiwinBalance -->
+                    <div class="PTSlotBalance">
+                        <span class="balanceLabel">爱赢PT老虎机余额 :</span> 
+                        <span class="balanceValue"> XXXXXX </span>
+                   	</div><!-- End of PTAiwinBalance -->
+                </div><!-- End of PTBalance -->
+            </div><!-- End of PTHeader -->
+            <div class="PTNav">
+                <ul>
+                	<li>
+                    	<a class="active" id="depositIndex">存款</a>
+                   	</li>
+                    <li>
+                    	<img src="images/navSeparator.png" width="1" height="40" alt="navSeparator" />
+                    </li>
+                    <li>
+                    	<a id="withdrawalButton">提款</a>
+                   	</li>
+                    <li>
+                    	<img src="images/navSeparator.png" width="1" height="40" alt="navSeparator" />
+                    </li>
+                    <li>
+                    	<a id="fundTransfer">户内转账</a>
+                   	</li>
+                </ul>
+            </div><!-- End of PTNav -->
+        </div><!-- End of PTHeader -->
+        <div class="PTBody">
+            <div class="secondTabContent01">
+                <h3>请选择支付方式</h3>
+                <br />
+                <table class="bankDeposit">
+                    <tbody><tr>
+                        <td><span class="firstBankTitle">网银转账</span></td>
+                        <td><a id="depositBank01" onclick="return false;"></a></td>
+                        <td><a id="depositBank02"></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="firstBankTitle firstBankSmall">选择银行卡支付<br />
+                            即可享受1%存款优惠</span>
+                        </td>
+                        <td><a id="depositBank03"></a></td>
+                        <td><a id="depositBank04"></a></td>
+                    </tr>
+                </tbody></table><!-- End of bankDeposit -->
+                <ol>
+                    <li>爱赢娱乐最低存款100元。</li>
+                    <li>在线支付最高上限1500元。</li>
+                </ol>
+            </div><!-- End of secondTabContent01 -->
+        	<div class="secondTabDeposit01">
+                <div class="secondTabDeposit01Content">
+                    <div id="icbcBank">
+                        <div id="firstForm01" style="">
+                            <div class="secondTabDepositTitle">
+                                <h1>第一步：选择下来列表并且输入存款金额</h1>
+                            </div><!-- End of secondTabTitle -->
+                            <div class="secondTabDepositBody">
+                                <table class="depositForm">
+                                    <tbody><tr>
+                                        <td colspan="2">
+                                            <img src="images/HD_01-yellow.png" class="picBank01" width="249" height="44" alt="" id="banklogo" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="required">*</span> 转帐方式:</td>
+                                        <td>
+                                            <select id="firstFormSelect" class="depositFormField" title="请选择正确的存款方式，以便您的存款可以极速到账">
+                                                <option value="-1">==请选择==</option>
+                                                <option value="1">网上银行</option>
+                                                <option value="2">ATM汇款</option>
+                                                <option value="4">其他</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="required">*</span> 存款金额：</td>
+                                        <td>
+                                            <input class="depositFormField" type="text" id="inputAmount" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input class="submitDeposit" type="submit" id="firstFormSubmit" value="显示收款银行" onclick="return false;" />
+                                            
+                                            &nbsp;&nbsp;&nbsp;<input class="submitDeposit" type="submit" id="goBack" value="返回" onclick="return false;" />
+                                        </td>
+                                    </tr>
+                                </tbody></table><!-- End of depositForm -->
+                                <div id="firstFormContentCont01" style="display:none">
+                                    <table class="firstFormContentTable">
+                                        <tbody><tr>
+                                            <td>建议金额:</td>
+                                            <td><span class="amountDeposit" id="amount"></span></td>
+                                            <td><span class="copyText" id="icbccopy1">复制</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                收款姓名:
+                                            </td>
+                                            <td><span class="accountsDeposit" id="accountname"></span></td>
+                                            <td><span class="copyText" id="icbccopy2">复制</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                收款帐号:
+                                            </td>
+                                            <td><span class="emailDeposit" id="accountno"></span></td>
+                                            <td><span class="copyText" id="icbccopy3">复制</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><input class="submitDeposit" type="submit" id="firstFormContentOK" /></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody></table>
+                                </div><!-- End of firstFormContentCont -->
+                            </div><!-- End of secondTabDepositBody -->
+                        </div><!-- End of firstForm01 -->
+                        <div id="secondForm01" style="display: block;">
+                            <div class="secondTabDepositTitle">
+                                <h1>爱赢娱乐提醒您</h1>
+                            </div><!-- End of secondTabTitle -->
+                            <div class="secondTabDepositBody">
+                                <table class="secondFormTable">
+                                    <tbody><tr>
+                                        <td colspan="2">
+                                            <ol>
+                                                <li>请严格按照指定金额进行存款，以便急速到账</li>
+                                                <li>收款账户信息不定时更换，请每次存款前点击此处获得正确的收款账户信息</li>
+                                                <li>系统已自动将您本次的存款记录在“存款状态页面”</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <img id="loadingicon" src="images/loading.gif" style="display:none;" alt="" />
+                                            <input class="submitDeposit" type="submit" id="secondFormSubmit" value="确定" onclick="return false;" />
+                                            <input class="submitDeposit" type="submit" id="secondFormCancel" value="取消" onclick="return false;" />
+                                        </td>
+                                    </tr>
+                                </tbody></table><!-- End of depositForm -->
+                            </div><!-- End of secondTabDepositBody -->
+                        </div><!-- End of secondForm01 -->
+                    </div><!-- End of icbcBank -->
+        
+                    <div id="thirdForm01" style="display: block;">
+                        <div class="secondTabDepositTitle">
+                            <h1>第二步：提交存款明细并申请审核</h1>
+                        </div><!-- End of secondTabTitle -->
+                        <div class="secondTabDepositBody">
+                            <table class="thirdFormTable">
+                                <tbody>
+                                    <tr>
+                                        <td>收款人姓名：</td>
+                                        <td><input class="thirdFormField" type="text" id="txtPayeeName" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>存款人姓名:</td>
+                                        <td><input class="thirdFormField" type="text" id="txtDepositName" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>存款金额：</td>
+                                        <td><input class="thirdFormField" type="text" id="txtDepositAmount" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>银行流水号：</td>
+                                        <td>
+                                            <input class="thirdFormField" type="text" id="textFieldSerial" maxlength="24" />
+                                            <div id="datetimepicker" class="input-append date" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                                                <input class="span2" size="16" type="text" value="" id="txtDateFrom" readonly="readonly" style="width:149px !important;" />
+                                                <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-calendar"></i></span>
+                                            </div>
+                                        </td>
+                                        <td><a href="http://122.53.112.250:7750/landingHelp/helpOnlineBankingGuide.html" target="_blank" id="txtLink" style="color:#d6a54f;">流水号帮助</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img id="loadingicon1" src="../images/loading.gif" style="display:none;" alt="" /></td>
+                                        <td>
+                                            <input class="submitDeposit" type="submit" id="thirdFormSubmit" value="提交存款审核" onclick="return false;" />
+                                            <input class="submitDeposit" type="submit" id="thirdFormCancel" value="返回" />
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                            	</tbody>
+                        	</table><!-- End of depositForm -->
+                        </div><!-- End of secondTabDepositBody -->
+                   	</div><!-- End of thirdForm01 -->
+                    <h3>存款须知：</h3>
+                    <ol>
+                        <li><span class="firstList">银行卡汇款账户定期会更换，每次存款请您登陆客户端查看最新汇款账户。</span></li>
+                        <li>存款成功后请填写提交您的汇款信息，以便快速办理；若分多次存款，请分别提交汇款信息。</li>
+                        <li>您的汇款会在20分钟内办理。如有疑问，请及时联系客服。</li>
+                    </ol>
+                </div><!-- End of secondTabDeposit01Content -->
+          	</div><!-- End of secondTabDeposit01 -->
+       	</div><!-- End of PTBody -->
+  	</div><!-- End of PTBoxContainer -->
+</body>
+</html>

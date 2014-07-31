@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PT Cashier | Deposit Net Bank </title>
+	<script type="text/javascript" language="javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" language="javascript" src="js/general.js"></script>
+    <script language="javascript" type="text/javascript" src="js/decimalinput.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#netbank_transfer_amount").decimalinput();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="PTBoxContainer">
+    	<div class="PTBoxShadow"></div><!-- End of boxShadow -->
+        <div class="PTHeader">
+            <div class="PTTitleContainer">
+                <img src="images/aiwinLogo.png" width="133" height="41" alt="" />
+                <h1>爱赢PT老虎机财务中心</h1>
+                <a class="exitBtn" onclick="window.location.href='logInForm.html'"></a>
+            </div><!-- End of PTHeader -->
+            <div class="PTBalanceContainer">
+                <div class="PTBalance">
+                	<div class="PTAiwinBalance">
+                        <span class="balanceLabel">爱赢网余额 :</span> 
+                        <span class="balanceValue"> XXXXXX </span>
+                   	</div><!-- End of PTAiwinBalance -->
+                    <div class="PTSlotBalance">
+                        <span class="balanceLabel">爱赢PT老虎机余额 :</span> 
+                        <span class="balanceValue"> XXXXXX </span>
+                   	</div><!-- End of PTAiwinBalance -->
+                </div><!-- End of PTBalance -->
+            </div><!-- End of PTHeader -->
+            <div class="PTNav">
+                <ul>
+                	<li>
+                    	<a class="active" id="depositIndex">存款</a>
+                   	</li>
+                    <li>
+                    	<img src="images/navSeparator.png" width="1" height="40" alt="navSeparator" />
+                    </li>
+                    <li>
+                    	<a id="withdrawalButton">提款</a>
+                   	</li>
+                    <li>
+                    	<img src="images/navSeparator.png" width="1" height="40" alt="navSeparator" />
+                    </li>
+                    <li>
+                    	<a id="fundTransfer">户内转账</a>
+                   	</li>
+                </ul>
+            </div><!-- End of PTNav -->
+        </div><!-- End of PTHeader -->
+        <div class="PTBody">
+        	<div class="PTForms">
+            	<table class="PTTableFields">
+                    <tbody>
+                        <tr>
+                            <td>收款账号：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="email" value="springandwater@hotmail.com" /></td>
+                        </tr>
+                        <tr>
+                            <td>用户名称：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="username" value="dadizhu" /></td>
+                        </tr>
+                        <tr>
+                            <td>汇款金额：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="netbank_transfer_amount" /></td>
+                        </tr>
+                        <tr>
+                            <td>收款人户名：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="account_name" value="黄珂" /></td>
+                        </tr>
+                        <tr>
+                            <td>收款银行：</td>
+                            <td>
+                            	<select class="txtfieldFormStyle select" name="" id="bank">
+                                    <option selected="selected" value="工商银行">工商银行</option>
+                                </select>
+                           	</td>
+                        </tr>
+                        <tr>
+                            <td>汇款人姓名：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="sender_name" /></td>
+                        </tr>
+                         <tr>
+                            <td>流水号：</td>
+                            <td><input type="text" class="txtfieldFormStyle" id="serial_number" /></td>
+                        </tr>
+                        <tr>
+                            <td><div id="loader"></div></td>
+                            <td>
+                                <input type="button" class="btnStyle reset" id="cmdReset" value="重置" onclick="return false;"/>
+                                <input type="button" class="btnStyle submit transmitter" id="cmdSubmit" value="提交" onclick="return false;" />
+                            </td>
+                        </tr>
+                	</tbody>
+             	</table><!-- End of PTTableFields -->
+            </div><!-- End of PTForms -->
+            <div class="PTInstructions">
+            	<div class="PTInstTitle">
+                	<h3>银行卡汇款注意事项</h3>
+                </div><!-- End of PTInstTitle -->
+                <div class="PTInstBody">
+                	<ul> 
+                    	<li>1）<span class="emp">银行卡汇款账户定期更换，每次存款请您登录客 户端查看最新汇款账户。查看工商银行交易流水号</span></li>
+                        <li>2）存款成功后请认真填写汇款信息，网银汇款即时到账。</li>
+                        <li>3）ATM，其他存款方式会在20分钟内办理，如有疑问，请及时联系客服。</li>
+                        <li>4)<span class="emp"> 客户端暂不支持多银行存款</span></li>
+                    </ul>
+                </div><!-- End of PTInstBody -->
+            </div><!-- End of PTInstructions -->
+        </div><!-- End of PTBody -->
+    </div><!-- End of PTBoxContainer -->
+    
+</body>
+</html>

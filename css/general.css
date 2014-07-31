@@ -1,0 +1,567 @@
+
+/* 
+	Name: PT Cashier Deposit CSS
+	Date Created: 7/1/2014
+	Website: PT Cashier Form
+	Author: Are Lorenz Bergonia
+*/
+
+*
+{
+	outline:none;
+	padding:0;
+	margin:0;	
+}
+
+html
+{
+	background:url(../images/bgPT.jpg) #7c4807 scroll top center no-repeat;
+	font-family: Microsoft Yahei, Arial, Helvetica, sans-serif;
+	color:#ffffff;
+}
+
+.clear
+{
+	clear:both;	
+}
+
+a
+{
+	text-decoration:none;	
+}
+
+img
+{
+	border:none;	
+}
+
+ul {
+	list-style-type:none;
+}
+
+/* =================== HEADER ========================= */
+
+.PTBoxContainer {
+	background:url(../images/bgBox.jpg) repeat;
+	width:650px;
+	height:400px;
+	border:2px #eab324 solid;
+	margin:0 auto;
+	margin-top: 65px;
+	position:relative;
+}
+
+.PTBoxShadow {
+	position:absolute;
+	width:684px;
+	height:35px;
+	background:url(../images/boxShadow.png) no-repeat;
+	top:403px;
+	left:-17px;
+}
+
+.PTHeader {
+	width: 100%;
+	height:142px;
+}
+.PTBody {
+	width: 610px;
+	height: 233px;
+	padding: 15px 20px 10px 20px;
+}
+
+.PTTitleContainer {
+	width:621px;
+	height:40px;
+	border-bottom:2px #eab324 solid;
+	padding:9px 15px;
+}
+.PTTitleContainer img {
+	float:left;	
+}
+
+.PTTitleContainer h1 {
+	float:left;	
+	margin-left:50px;
+	font-size:26px;
+	color:#fcc442;
+	font-weight:normal;
+}
+.PTTitleContainer a.exitBtn {
+	display:block;
+	float:right;
+	width:65px;
+	height:25px;
+	background:url(../images/exitBg.png) repeat-x;
+	cursor:pointer;
+}
+.PTTitleContainer a.exitBtn:hover {
+	background:url(../images/exitBg.png) 0px -25px;
+}
+
+.PTBalanceContainer {
+	background:url(../images/balanceBg.jpg) repeat-x;
+	width:100%;
+	height:38px;
+	border-bottom:2px #eab324 solid;
+}
+
+.PTBalance {
+	width:520px;
+	height:20px;
+	margin:0 auto;
+}
+.PTAiwinBalance, .PTSlotBalance {
+	float:left;
+	width:210px;
+	height:	20px;
+	padding: 0px 10px;
+	background:url(../images/navBalanceBg.png) repeat-x;
+	border-radius:5px;
+	border:1px #221302 solid;
+	text-align:center;
+	line-height:15px;
+	margin-top:8px;
+}
+.PTSlotBalance {
+	margin-left: 50px;
+}
+
+.PTAiwinBalance span , .PTSlotBalance span  {
+	font-size: 12px;
+	color:#ef9f05;
+}
+.PTBalance span.balanceValue {
+	font-size: 12px;
+	color:#fff;
+}
+
+.PTNav {
+	width:651px;
+	height:40px;
+	border-bottom:2px #eab324 solid;
+}
+.PTNav ul {
+	width:651px;
+	height:40px;
+}
+.PTNav ul li{
+	display:inline;	
+	float:left;
+}
+.PTNav ul li.firstNav{
+
+}
+.PTNav ul li a{
+	background:url(../images/navSprite.jpg) 0px 0px;
+	float: left;
+	width:216px;
+	height:40px;
+	text-align: center;
+	color:#ffd676;
+	font-size:20px;
+	line-height: 40px;
+}
+
+.PTNav ul li a:hover {
+	background:url(../images/navSprite.jpg) 0px -40px;
+}
+
+.PTNav ul li a.active {
+	background:url(../images/navSprite.jpg) 0px -40px;
+	color:#fff;
+}
+
+.PTForms {
+	float:left;
+	width:300px;
+	height:218px;
+}
+.PTInstructions {
+	float:right;
+	width: 239px;
+	height: 183px;
+	background:url(../images/instructionsBg.png) no-repeat;
+	padding:0px 20px 10px 20px;
+}
+.PTInstTitle {
+	text-align:center;
+	padding:10px;
+}
+
+.PTInstTitle h3 {
+	font-size:12px;
+	color:#e5b960;
+}
+.PTInstructions ul li{
+	font-size:12px;
+	line-height:18px;
+}
+.PTInstructions.withdrawalInst ul li{
+	font-size:12px;
+	line-height:22px;
+}
+.PTInstructions.fundTransfer ul li{
+	font-size:12px;
+	line-height:25px;
+}
+
+.PTInstructions ul li span.emp {
+	font-size:12px;
+	line-height:18px;
+	color:#fff474;
+}
+
+.txtfieldFormStyle {
+	width:211px;
+	height:20px;
+	border:1px #ff9000 solid;
+	background:#FFF;
+	outline:none;
+	color:#878787;
+}
+.txtfieldFormStyle.select {
+	width:213px;	
+	color:#878787;
+}
+
+.inputDateTime 
+{
+    width:189px !important;
+}
+.btnStyle {
+	width:91px !important;
+	height:30px;
+	background:url(../images/buttonsBg.png) no-repeat;
+	border:none;
+	font-size:14px;
+	color:#ffd676;
+}
+.btnStyle:hover {
+	background:url(../images/buttonsBg.png) 0px -31px no-repeat;
+	cursor:pointer;
+}
+.btnStyle.submit {
+	margin-left:20px;
+}
+.buttonLeft
+{
+    margin-left:20px;
+}
+.PTTableFields {
+	width:325px;
+	height:auto;
+	margin:0 auto;
+}
+.PTTableFields td {
+	padding:2px;
+	font-size:12px;
+}
+.PTTableFields td .tdValue {
+	color:#e5b960;
+}
+.PTTableFields .submitBtn,
+.PTTableFields .cancelBtn {
+	width:70px;
+	height:30px;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+.PTTableFields .submitBtn {
+	background:url(../images/submitCancelBtn.png);
+}
+.PTTableFields .submitBtn:hover {
+	background:url(../images/submitCancelBtn.png) 0px -30px;
+}
+.PTTableFields .cancelBtn {
+	background:url(../images/submitCancelBtn.png) -70px 0px;
+	margin-left:20px;
+}
+.PTTableFields .cancelBtn:hover {
+	background:url(../images/submitCancelBtn.png) -70px -30px;
+}
+.depositNavBtns {
+	width:350px;
+	margin:15px auto 0;
+}
+.depositNavBtns li {
+	text-align:center;
+	height:80px;
+}
+.depositNavBtns li p {
+	font-size:12px;
+}
+.depositNavBtns li .depositBtns {
+	display:block;
+	width:192px;
+	height:43px;
+	background:url(../images/depositBtnBg.png) no-repeat;
+	font-size:18px;
+	color:#fff474;
+	text-align:center;
+	line-height:40px;
+	margin:0 auto;
+}
+.depositNavBtns li .depositBtns:hover {
+	background:url(../images/depositBtnBg.png) 0px -43px no-repeat;
+	color:#583700;
+}
+.footerNote {
+	width:611px;
+	height:32px;
+}
+.footerNote p {
+	font-size:12px;
+	color:#ffd676;
+	text-align:center;
+}
+.footerNote .separator {
+	width:486px;
+	margin-top:30px;
+	margin-left:50px;
+	margin-bottom:5px;
+}
+
+.disableButton
+{   
+    width: 91px !important;
+	height:30px;
+	background:url(../images/buttonsBg.png) 0px -62px no-repeat !important;
+	border:none;
+	font-size:14px;
+	color: #9c9c9c;
+}
+
+.disabledLink
+{
+    background:url(../images/navSprite.jpg) 0px -80px no-repeat !important;
+	float: left !important;
+	width:216px !important;
+	height: 40px !important;
+	text-align: center !important;
+	color:#919090 !important;
+	font-size:20px !important;
+	line-height: 40px !important;
+}
+
+a#withdrawalButton, a#fundTransfer, a#depositIndex
+{
+    cursor:pointer;
+}
+
+/* Bootstrap Date Time Picker */
+
+.input-append .add-on, .input-prepend .add-on {
+    padding: 0px 2px !important; 
+}
+.thirdFormClass {
+	margin-top:10px;
+}
+
+.thirdFormReviewBtn {
+	color:#090;
+	cursor:pointer;
+	border:none;
+}
+.thirdFormCancelBtn {
+	color:#F00;
+	cursor:pointer;
+	border:none;
+}
+.inputDatePicker {
+	width:170px !important;
+	font-size:10px;
+	height:20px !important;
+}
+
+.thirdFormField {
+	width:170px !important;
+}
+
+.table-condensed th, .table-condensed td {
+	padding:0px !important;
+}
+
+.datepicker td, .datepicker th {
+	font-size:12px !important;
+}
+.datepicker td.month , .datepicker th.month {
+	font-size:12px !important;
+}
+
+.datepicker td span {
+	width:40px !important;
+	height:40px !important;
+}
+
+/* Hour minute seconds */
+
+.bootstrap-datetimepicker-widget .timepicker-hour, 
+.bootstrap-datetimepicker-widget .timepicker-minute, 
+.bootstrap-datetimepicker-widget .timepicker-second
+ {
+	width: 100%;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333 !important;
+	padding-left:10px;
+	cursor:pointer; /* pointer for the time-picker */
+}
+.bootstrap-datetimepicker-widget .separator {
+	color: #333333 !important;
+}
+.bootstrap-datetimepicker-widget .minute,
+.bootstrap-datetimepicker-widget .hour, 
+.bootstrap-datetimepicker-widget .second {
+	font-size:12px;
+	color: #333333 !important;
+	padding: 0px 17px !important; /* addt'l css */
+}
+.bootstrap-datetimepicker-widget .minute:hover,
+.bootstrap-datetimepicker-widget .hour:hover, 
+.bootstrap-datetimepicker-widget .second:hover {
+	font-size:12px;
+	cursor:pointer;
+	padding: 0px 17px !important;
+	background:#eee;
+}
+.timepicker-picker .table-condensed tr td {
+	padding: 4px 7px !important;
+}
+.accordion-toggle {
+	text-align:center !important;
+}
+
+.PTTableFields select, 
+.PTTableFields textarea, 
+.PTTableFields input[type="text"], 
+.PTTableFields input[type="password"], 
+.PTTableFields input[type="datetime"], 
+.PTTableFields input[type="datetime-local"], 
+.PTTableFields input[type="date"], 
+.PTTableFields input[type="month"], 
+.PTTableFields input[type="time"], 
+.PTTableFields input[type="week"], 
+.PTTableFields input[type="number"], 
+.PTTableFields input[type="email"], 
+.PTTableFields input[type="url"], 
+.PTTableFields input[type="search"], 
+.PTTableFields input[type="tel"], 
+.PTTableFields input[type="color"], 
+.PTTableFields .uneditable-input {
+   	display: inline-block;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 14px;
+    line-height: 20px !important; 
+    color: #555;
+    vertical-align: middle !important;
+    border-radius: 0px !important;
+	border:1px solid #FF9C00 !important;
+}
+
+/* Login Frm */
+
+.PTBoxLogin {
+	background:url(../images/loginBg.png) repeat;
+	width:296px;
+	height:303px;
+	border:2px #eab324 solid;
+	margin:0 auto;
+	margin-top: 65px;
+	position:relative;
+}
+
+.PTBoxLoginShadow {
+	position:absolute;
+	width:356px;
+	height:16px;
+	background:url(../images/loginBoxShadow.png) no-repeat;
+	top:305px;
+	left:-30px;
+}
+
+.PTLoginContainer .aiwinLogo {
+	margin-left: 40px;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.PTLoginBody {
+	width:233px;
+	height:174px;
+	background:url(../images/loginBgBody.png) no-repeat;
+	margin:0 auto;
+	padding-top:10px;
+	padding-left:20px;
+}
+
+.PTTableLogin {
+	width:236px;
+	height:auto;
+	margin:0 auto;
+}
+.PTTableLogin td {
+	padding:2px;
+	font-size:12px;
+}
+.txtfieldLoginStyle {
+	width:150px;
+	height:25px;
+	border:1px #ebb424 solid;
+	background:#FFF;
+	outline:none;
+	color:#878787;
+}
+
+.PTTableLogin tr {
+	height:35px;
+}
+
+.txtfieldInputCaptcha {
+	width:70px;
+	height:25px;
+	border:1px #ebb424 solid;
+	background:#FFF;
+	outline:none;
+	color:#878787;
+	float:left;
+}
+
+.PTTableLogin img.captcha {
+	float:right;
+	margin-right:25px;
+}
+
+.loginBtnStyle {
+	width:91px;
+	height:30px;
+	background:url(../images/buttonsBg.png) no-repeat;
+	border:none;
+	font-size:14px;
+	color:#f6e0ac;
+}
+.loginBtnStyle:hover {
+	background:url(../images/buttonsBg.png) 0px -31px no-repeat;
+	cursor:pointer;
+}
+.loginRefreshCaptcha a {
+	margin-right:25px;
+	color:#ffe1b0;
+	font-size:14px;
+	line-height:30px;
+}
+.loginRefreshCaptcha a:hover {
+	color:#ffffff;
+	font-size:14px;
+	text-decoration:underline;
+}
+
+.balanceValue span{
+	color:#0F3 !important;	
+}
+
+.balanceLabel span:nth-child(2){
+	color:#009 !important;
+}
