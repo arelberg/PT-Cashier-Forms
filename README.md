@@ -1,5 +1,6 @@
 PT-Cashier-Forms
 ================
 
-PT Cashier Form
+About the Project
 
+PT-Cashier-Forms
